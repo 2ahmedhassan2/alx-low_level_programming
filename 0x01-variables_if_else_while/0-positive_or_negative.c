@@ -9,10 +9,10 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n==0) 
-printf(n," is zero")
+printf(n,"%i is zero\n")
 else if (n<0) 
-printf(n," is negative")
+printf(n,"%i is negative\n")
 else 
-printf(n," is positive")
+printf(n,"%i is positive\n")
 return (0);
 }
