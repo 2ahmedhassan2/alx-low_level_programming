@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
 /**
 * main - more headers goes there
 *
@@ -8,7 +9,7 @@
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void main(void)
 {
 putchar('_putchar');
 putchar('\n');
