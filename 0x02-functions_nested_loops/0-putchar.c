@@ -9,7 +9,7 @@
 * Return: Always 0 (Success)
 */
 
-void main(void)
+int main(void)
 {
 putchar('_putchar');
 putchar('\n');
