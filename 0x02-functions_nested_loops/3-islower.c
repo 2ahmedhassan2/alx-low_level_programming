@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * int _islower - Entry point _putchar
+ * _islower - Entry point _putchar
  * @c: checks inputs
  * Return: Always 0
  */
 int _islower(int c)
 {
-if (c >= 'a' && c<= 'z')
+if (c >= 'a' && c <= 'z')
 {
 return (1);
 }
