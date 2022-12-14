@@ -2,7 +2,7 @@
 #define MAIN_H_INCLUDED
 
 int main(void);
-int _putchar(char i)
+int _putchar();
 void print_alphabet(void);
 
 
