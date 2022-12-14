@@ -2,16 +2,16 @@
 /**
  * _isalpha - Entry point _putchar
  * @c: Entry
- * Return 0 Always
+ * Return: Always 0
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 if (c >= 'A' && c >= 'a' && <= 'z' && <= 'Z')
 {
-return(1);
+return (1);
 }
 else
 {
-return(0);
+return (0);
 }
 }
