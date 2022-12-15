@@ -7,7 +7,7 @@
  * starting from 0, followed by a new line.
  * Return: 0
  */
-void times_table(void);
+void times_table(void)
 {
 int c = 0;
 while (c < 10)
