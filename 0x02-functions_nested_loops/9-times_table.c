@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
- * main - main block
+ * times_table - main block
  * Description: prints all single number of base 10
  * starting from 0, followed by a new line.
  * Return: 0
  */
-int main(void)
+void times_table(void);
 {
 int c = 0;
 while (c < 10)
