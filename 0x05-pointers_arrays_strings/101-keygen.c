@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <math.h>
 
 /**
  * main - main
@@ -12,34 +13,26 @@
 
 int main(void)
 {
-int counter, sum, random;
-sum = 0;
-counter = 0;
-random = 0;
-char password [80];
-srand(time(NULL));
-while (sum < 2772)
+int ascii = 2772, i = 0, j, random;
+char password[100];
+time_t t;
+srand((int) time(&t));
+while (ascii > 126)
 {
-if (2772 - sum < 48)
-{
-sum -= password[--counter];
+random = rand() % 126;
+password[i] = random;
+ascii -= random;
+i++;
 }
-else if (2772 - sum <= 126)
-{
-random = 2772 - sum;
-}
+if (ascii > 0)
+password[i] = ascii;
 else
 {
-random = rand() % (126 - 48) + 48;
+i--;
 }
-if (random)
+for (j = 0; j <= i; j++)
 {
-password[counter++] = random;
-sum += random;
+printf("%c", password[j]);
 }
-random = 0;
-}
-password[counter] = '\0';
-printf("%s\n", password);
-return 0;
+return (0);
 }
