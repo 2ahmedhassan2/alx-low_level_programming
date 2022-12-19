@@ -11,7 +11,11 @@
 
 int _strlen(char *s)
 {
-*s = "How";
-len = _strlen(s);
- _putchar("%d", len);
+int i;
+i = 0;
+while (*(s + i) != '\0')
+{
+i++;
+}
+return (i);
 }
