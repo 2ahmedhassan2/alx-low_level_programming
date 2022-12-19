@@ -11,6 +11,6 @@
 
 int _strlen(char *s)
 {
-char *s[1] = "How";
-_putchar('%zu', strlen(*s));
+char *s = "How";
+_putchar('%d', strlen(s));
 }
