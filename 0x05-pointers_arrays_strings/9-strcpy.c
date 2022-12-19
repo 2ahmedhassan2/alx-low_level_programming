@@ -1,13 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * _strcpy - main
- * @src: first arg
+ * @dest: first arg
  * Return: Always 0
- * @dest: second arg
+ * @src: second arg
  */
 
-char *_strcpy(char *dest, char *src)
+char _strcpy(char *dest, char *src)
 {
 int i;
 for (i = 0; src[i] != '\0'; i++)
