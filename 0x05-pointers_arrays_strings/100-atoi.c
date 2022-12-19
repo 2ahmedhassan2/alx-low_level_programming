@@ -7,7 +7,7 @@
  *
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 int i, sign, numb;
 i = 0;
