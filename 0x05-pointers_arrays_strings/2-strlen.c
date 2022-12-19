@@ -12,5 +12,6 @@
 int _strlen(char *s)
 {
 char *s = "How";
-_putchar('%d', strlen(s));
+len = _strlen(s);
+ _putchar("%d", len);
 }
