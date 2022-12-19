@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+/**
+ * print_rev - main
+ * @s: parameter
+ * Return: Always 0
+ *
+ */
+
+void print_rev(char *s)
+{
+char *s[40]; // declare the size of character string
+printf (" \n Enter a string to be reversed: ");
+scanf ("%s", s);
+// use strrev() function to reverse a string
+printf (" \n After the reverse of a string: %s ", strrev(s));
+return 0;
+}
