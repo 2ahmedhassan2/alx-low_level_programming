@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strcat - check the code
  * @str: Arg
  * @dest: Arg
  * Return: Always 0.
