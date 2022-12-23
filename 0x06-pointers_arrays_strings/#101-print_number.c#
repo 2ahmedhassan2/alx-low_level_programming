@@ -12,8 +12,7 @@ unsigned int size = n;
 int digits = 0;
 int i;
 if (n < 0)
-size = -n;
-if (n == 0)
+size = -n;asif (n == 0)
 digits = 1;while (size >= 1)
 {
 size = size / 10;
