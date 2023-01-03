@@ -24,7 +24,10 @@ break;
 temp++;
 }
 if (*temp == '\0')
+{
 break;
+}
 s++;
+}
 return (count);
 }
