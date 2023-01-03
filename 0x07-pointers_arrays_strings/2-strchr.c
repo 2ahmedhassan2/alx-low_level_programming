@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strchr - fills the first n bytes of the memory area
  * @s: pointer to the memory area to be filled
