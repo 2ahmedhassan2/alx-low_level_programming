@@ -9,14 +9,10 @@
 
 void print_chessboard(char (*a)[8])
 {
-int i, j;
-
-for (i = 0; i < 8; i++)
-{
-for (j = 0; j < 8; j++)
-{
-printf("%c ", a[i][j]);
+int sum1 = 0, sum2 = 0;
+for (int i = 0; i < size; i++) {
+sum1 += a[i * size + i];
+sum2 += a[i * size + (size - i - 1)];
 }
-printf("\n");
-}
+printf("Sum of the two diagonals: %d\n", sum1 + sum2);
 }
