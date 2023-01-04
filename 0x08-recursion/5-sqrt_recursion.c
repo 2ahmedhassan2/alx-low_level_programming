@@ -22,9 +22,10 @@ return (_sqrt_recursion(n, i + 1));
 }
 
 /**
- * sqrt_recursion - check
- * @n: parameter
- * Return: 0 if sucessful
+ * sqrt_recursion - calculates the natural square root of a number
+ * @n: the number to find the square root of
+ *
+ * Return: the natural square root of n
  */
 int sqrt_recursion(int n)
 {
