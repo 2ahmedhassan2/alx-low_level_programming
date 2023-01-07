@@ -11,50 +11,37 @@
  * Return: pointer to the memory area s
  */
 
-int is_digits(char *s)
+int isNotInteger(char *s)
 {
-int len = strlen(s);
-for (int i = 0; i < len; i++)
+int i = 0;
+while (s[i] != '\0')
 {
-if (!isdigit(s[i]))
-{
-return (0);
-}
-}
+if (s[i] < '0' || s[i] > '9')
 return (1);
+i++;
+}
+return (0);
 }
 
 /**
- * main - fills the first n bytes of the memory area
- * @argc: pointer to the memory area to be filled
- * @argv: constant byte to fill the memory area
- * @: number of bytes to be fille
- * Return: pointer to the memory area s
+ * main - adds all the given positive numbers
+ * @argc: number of argument passed
+ * @argv: array to store arguments
+ * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-if (argc == 1)
-{
-printf("0\n");
-return (0);
-}
 int sum = 0;
-for (int i = 1; i < argc; i++)
+while (--argc)
 {
-if (!is_digits(argv[i])
-{
-printf("Error\n");
-return (1);
-}
-int n = atoi(argv[i]);
-if (n < 0)
+if (isNotInteger(argv[argc]))
 {
 printf("Error\n");
 return (1);
 }
-sum += n;
+sum += atoi(argv[argc]);
 }
-printf("%d\n", sum);
+printf("%i\n", sum);
 return (0);
 }

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <main.h>
 
 /**
  * main - fills the first n bytes of the memory area
@@ -11,7 +10,8 @@
 
 int main(int arg, char *argv[])
 {
-for (int i = 0; i < argc; i++)
+int i;
+for (i = 0; i < argc; i++)
 printf("%s\n", argv[i]);
 return (0);
 }
