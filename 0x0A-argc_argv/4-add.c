@@ -2,14 +2,12 @@
 #include <stdlib.h>
 
 /**
- * isNotInteger - fills the first n bytes of the memory area
- * @s: pointer to the memory area to be filled
- * @: constant byte to fill the memory area
- * @: number of bytes to be fille
- * Return: pointer to the memory area s
+ * isNotInteger - checks if the argument is integer or not
+ * @s: array of character
+ * Return: 0 || 1
  */
 
-int isNotInteger(char *s)
+int isNotInteger(const char *s)
 {
 int i = 0;
 while (s[i] != '\0')
