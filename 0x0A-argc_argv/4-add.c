@@ -11,14 +11,17 @@
  * Return: pointer to the memory area s
  */
 
-int is_digits(char *s) {
+int is_digits(char *s)
+{
 int len = strlen(s);
-for (int i = 0; i < len; i++) {
-if (!isdigit(s[i])) {
+for (int i = 0; i < len; i++)
+{
+if (!isdigit(s[i]))
+{
 return (0);
 }
 }
-return 1;
+return (1);
 }
 
 /**
@@ -29,19 +32,24 @@ return 1;
  * Return: pointer to the memory area s
  */
 
-int main(int argc, char *argv[]) {
-if (argc == 1) {
+int main(int argc, char *argv[])
+{
+if (argc == 1)
+{
 printf("0\n");
 return (0);
 }
 int sum = 0;
-for (int i = 1; i < argc; i++) {
-if (!is_digits(argv[i])) {
+for (int i = 1; i < argc; i++)
+{
+if (!is_digits(argv[i])
+{
 printf("Error\n");
 return (1);
 }
 int n = atoi(argv[i]);
-if (n < 0) {
+if (n < 0)
+{
 printf("Error\n");
 return (1);
 }
