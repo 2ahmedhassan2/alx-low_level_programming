@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * main - fills the first n bytes of the memory area
