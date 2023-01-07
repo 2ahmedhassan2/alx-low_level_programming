@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * main - fills the first n bytes of the memory area
@@ -10,7 +9,7 @@
  * Return: pointer to the memory area s
  */
 
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 int x, y;
 if (argc <= 2)
