@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <main.h>
 
 /**
- * is_digits - fills the first n bytes of the memory area
+ * isNotInteger - fills the first n bytes of the memory area
  * @s: pointer to the memory area to be filled
  * @: constant byte to fill the memory area
  * @: number of bytes to be fille
