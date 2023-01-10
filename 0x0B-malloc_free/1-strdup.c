@@ -11,13 +11,20 @@
 
 char *_strdup(char *str)
 {
-*str = _strdup("ALX SE");
-if (s == NULL)
+int i = 1, j = 0;
+char *snt;
+if (str == NULL)
+return (NULL);
+while (str[i])
+i++;
+snt = (char *)malloc(i * sizeof(char) + 1);
+if (snt == NULL)
+return (NULL);
+while (j < i)
 {
-printf("failed to allocate memory\n");
-return (1);
+snt[j] = str[j];
+j++;
 }
-printf("%s\n", str);
-free(str);
-return (0);
+snt[j] = '\0';
+return (snt);
 }
