@@ -19,7 +19,8 @@ for (; i < ac; i++)
 {
 for (j = 0; av[i][j]; j++)
 len++;
-len+}
+len++;
+}
 len++;
 new_str = malloc(len * sizeof(char));
 if (new_str == NULL)
