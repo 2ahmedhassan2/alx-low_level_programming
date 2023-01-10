@@ -22,7 +22,7 @@ len++;
 len++;
 }
 len++;
-new_str = malloc(len * sizeof(char));
+new_str = malloc(len *sizeof(char));
 if (new_str == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
