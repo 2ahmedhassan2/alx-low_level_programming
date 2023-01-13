@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * array_range - checks uppercase
