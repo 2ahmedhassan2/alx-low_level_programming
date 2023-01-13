@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * malloc_checked - checks uppercase

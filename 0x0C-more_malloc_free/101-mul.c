@@ -13,8 +13,16 @@
 
 long long multiply(char *num1, char *num2)
 {
-return atoll(num1) * atoll(num2);
+return (atoll(num1) * atoll(num2));
 }
+
+/**
+ * is_valid_number - checks uppercase
+ * @num: parameter
+ * @: parameter
+ * Return: Null
+ */
+
 int is_valid_number(char *num)
 {
 int i;
@@ -27,6 +35,14 @@ return (0);
 }
 return (1);
 }
+
+/**
+ * main - checks uppercase
+ * @argc: parameter
+ * @argv: parameter
+ * Return: Null
+ */
+
 int main(int argc, char *argv[])
 {
 if (argc != 3)
