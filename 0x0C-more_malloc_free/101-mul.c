@@ -1,61 +1,29 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <main.h>
-
 /**
- * is_valid_number - checks uppercase
- * @num: parameter
- * @: parameter
- * Return: Null
+ * main - multiplies two positive numbers
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  */
-
-int is_valid_number(char *num)
-{
-int i;
-int len = strlen(num);
-for (i = 0; i < len; i++)
-{
-if (!isdigit(num[i]))
-{
-return (0);
-}
-}
-return (1);
-}
-
-/**
- * multiply - checks uppercase
- * @num1: parameter
- * @num2: parameter
- * Return: Null
- */
-
-long long multiply(char *num1, char *num2)
-{
-return (atoll(num1) * atoll(num2));
-}
-
-/**
- * main - checks uppercase
- * @argc: parameter
- * @argv: parameter
- * Return: Null
- */
-
 int main(int argc, char *argv[])
 {
+unsigned long mul;
+int i, j;
 if (argc != 3)
+{ printf("Error\n");
+exit(98); }
+for (i = 1; i < argc; i++)
 {
-printf("Error\n");
-exit(EXIT_FAILURE);
-}
-if (!is_valid_number(argv[1]) || !is_valid_number(argv[2]))
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-printf("Error\n");
-exit(EXIT_FAILURE);
+if (argv[i][j] > 57 || argv[i][j] < 48)
+{  printf("Error\n");
+exit(98); }
 }
-printf("%lld\n", multiply(argv[1], argv[2]));
-return (EXIT_SUCCESS);
+}
+mul = atol(argv[1]) * atol(argv[2]);
+printf("%lu\n", mul);
+return (0);
 }
