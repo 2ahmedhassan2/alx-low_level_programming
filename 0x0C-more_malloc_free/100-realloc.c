@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <main.h>
 
 /**
  * _realloc - checks uppercase
