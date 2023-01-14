@@ -20,6 +20,7 @@ if (arr == NULL)
 return (NULL);
 }
 for (i = 0; min <= max; i++)
+{
 arr[i] = min;
 min++;
 }
