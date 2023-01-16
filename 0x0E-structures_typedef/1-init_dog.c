@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-
+0;10;1c
 /**
  * init_dog - checks uppercase
  * @d: parameter
@@ -12,5 +12,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct 
+struct dog *d
+{
+char *name;
+float age;
+char *owner; 
+} d;
 }
