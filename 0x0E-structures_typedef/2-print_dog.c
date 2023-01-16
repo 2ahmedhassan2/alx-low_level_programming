@@ -10,16 +10,9 @@
 void print_dog(struct dog *d)
 {
 if (d == NULL)
-{
-return ("nil");
-}
-d.name = "Poppy";
-d.age = 3.5;
-d.owner = "Bob";
-print_dog(&d);
-if (name == NULL)
-{
-return ("Name = (nil)");
-}
-return (0);
+return;
+if (d->name == NULL)
+d->name = "(nil)";
+if (d->owner == NULL)
+d->owner = "(nil)";
 }
