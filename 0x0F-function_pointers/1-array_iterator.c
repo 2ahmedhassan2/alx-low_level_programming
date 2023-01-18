@@ -2,14 +2,14 @@
 #include "function_pointers.h"
 
 /**
- * int_index - check if a number is equal to 98
+ * array_iterator - check if a number is equal to 98
  * @array: the integer to check
  * @size: Parameter
- * @cmp: Parameter
+ * @action: Parameter
  * Return: 0 if false, something else otherwise.
  */
 
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 unsigned int i;
 if (array && size && action)
