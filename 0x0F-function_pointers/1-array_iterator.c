@@ -11,17 +11,12 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-if (size <= 0)
+unsigned int i;
+if (array && size && action)
 {
-return (-1);
-}
-int i;
 for (i = 0; i < size; i++)
 {
-if (cmp(array[i]) != 0)
-{
-return (i);
+(*action)(array[i]);
 }
 }
-return (-1);
 }
