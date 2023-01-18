@@ -12,22 +12,19 @@
 
 int main(int argc, char *argv[])
 {
-int bytes, i;
-char *main_ptr;
+int i;
 if (argc != 2)
 {
 printf("Error\n");
 exit(1);
 }
-bytes = atoi(argv[1]);
-if (bytes < 0)
+if (atoi(argv[1]) < 0)
 {
 printf("Error\n");
 exit(2);
 }
-main_ptr = (char *)main;
-for (i = 0; i < bytes; i++)
-printf("%02hhx", *(main_ptr + i));
-printf("\n");
+for (i = 0; i < atoi(argv[1]) - 1; i++)
+printf("%02hhx ", ((char *)main)[i]);
+printf("%02hhx\n", ((char *)main)[i]);
 return (0);
 }
