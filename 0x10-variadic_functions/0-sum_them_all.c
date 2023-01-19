@@ -9,10 +9,12 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-n = sum_them_all(2, 98, 1024);
-printf("%d\n", n);
-n = sum_them_all(4, 98, 1024, 402, -1024);
-printf("%d\n", n);
-if (n == 0)
-return (0);
+va_list list;
+unsigned int i, sum = 0;
+va_start(list, n);
+if (n != 0)
+for (i = 0; i < n; sum += va_arg(list, unsigned int), i++)
+;
+va_end(list);
+return (sum);
 }
